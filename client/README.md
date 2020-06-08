@@ -2,6 +2,13 @@
 
 Apollo Client
 
+## Deploy
+
+```
+yarn build
+firebase deploy
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
