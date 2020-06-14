@@ -7,3 +7,11 @@ Graphql on Rails
 
 ## Rails version
 6.0.3.1
+
+## Graphql
+
+Create graphql schema
+
+```
+bundle exec rake graphql:schema:dump
+```
