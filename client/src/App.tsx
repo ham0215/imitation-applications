@@ -1,12 +1,12 @@
 import React from 'react';
+import RootRouter from 'pages';
+import { BrowserRouter } from 'react-router-dom';
 import 'App.css';
 
-export default function App() {
+export default () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="/images/blue-bird.png" className="App-logo" alt="青い鳥" />
-      </header>
-    </div>
+    <BrowserRouter>
+      <RootRouter />
+    </BrowserRouter>
   );
-}
+};
