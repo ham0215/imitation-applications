@@ -1,7 +1,22 @@
 {
-  "extends": ["react-app", "airbnb"],
+  "extends": [
+    "react-app",
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "react",
+    "prettier",
+    "eslint-plugin-jsx-a11y",
+    "eslint-plugin-flowtype",
+    "eslint-plugin-import",
+    "eslint-plugin-react",
+    "eslint-plugin-react-hooks",
+    "@typescript-eslint"
+  ],
   "settings": {
     "import/resolver": {
       "node": {
@@ -13,7 +28,7 @@
   "rules": {
     "react/jsx-filename-extension": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
-    "import/extensions": "off"
+    "@typescript-eslint/explicit-module-boundary-types": "off"
   },
   "globals": {
     "window": true,
