@@ -17,10 +17,12 @@ const useStyles = makeStyles({
   default: {
     color: 'white',
     fontSize: '30px',
+
+    '&$selected': {
+      color: '#1da1f2',
+    },
   },
-  selected: {
-    color: '#1da1f2',
-  },
+  selected: {},
 });
 
 export default () => {
