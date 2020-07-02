@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import { GiStarShuriken } from 'react-icons/gi';
 
 const Header = styled.header`
   background-color: #282c34;
@@ -31,7 +32,8 @@ const Star = styled.div`
   margin-bottom: auto;
   margin-left: auto;
   margin-right: 10px;
-  color: white;
+  color: #1da1f2;
+  font-size: 30px;
 `;
 
 export default () => {
@@ -41,7 +43,9 @@ export default () => {
         <UserImg src="/images/blue-bird.png" alt="青い鳥" />
       </div>
       <Title>Home</Title>
-      <Star>★</Star>
+      <Star>
+        <GiStarShuriken />
+      </Star>
     </Header>
   );
 };
