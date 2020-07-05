@@ -9,7 +9,6 @@ const Container = styled.div`
 `;
 
 const Main = styled.div`
-  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 `;
