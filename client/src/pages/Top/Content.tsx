@@ -5,7 +5,6 @@ export default () => {
     <div>
       contents
       <br />
-      contents
     </div>
   );
 };

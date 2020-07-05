@@ -18,10 +18,9 @@ const useStyles = makeStyles({
     width: '100%',
     position: 'fixed',
     left: '0px',
-    bottom: '2px',
+    bottom: '0px',
     zIndex: 99,
     textAlign: 'center',
-    padding: '0 auto',
     display: 'block',
   },
   default: {
