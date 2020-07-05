@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { GiStarShuriken } from 'react-icons/gi';
+import UserImg from 'components/UserImg';
 
 const Header = styled.header`
   display: block;
-  border: solid 1px;
+  border-bottom: solid 1px;
   border-color: rgb(61, 84, 102);
   z-index: 99;
   width: 100%;
@@ -20,15 +21,11 @@ const HeaderMenu = styled.div`
   display: flex;
 `;
 
-const UserImg = styled.img`
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+const ImgDiv = styled.div`
   margin-left: 10px;
-  margin-right: auto;
+  margin-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  display: block;
 `;
 
 const Title = styled.h2`
@@ -51,9 +48,9 @@ export default () => {
   return (
     <Header>
       <HeaderMenu>
-        <div>
+        <ImgDiv>
           <UserImg src="/images/blue-bird.png" alt="青い鳥" />
-        </div>
+        </ImgDiv>
         <Title>Home</Title>
         <Star>
           <GiStarShuriken />
