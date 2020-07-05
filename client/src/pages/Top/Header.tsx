@@ -3,9 +3,20 @@ import styled from 'styled-components/macro';
 import { GiStarShuriken } from 'react-icons/gi';
 
 const Header = styled.header`
-  background-color: #282c34;
+  display: block;
+  border: solid 1px;
+  border-color: rgb(61, 84, 102);
+  z-index: 99;
   width: 100%;
-  height: 70px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+  padding: 0 auto;
+  background-color: #15202b;
+`;
+
+const HeaderMenu = styled.div`
   display: flex;
 `;
 
@@ -39,13 +50,15 @@ const Star = styled.div`
 export default () => {
   return (
     <Header>
-      <div>
-        <UserImg src="/images/blue-bird.png" alt="青い鳥" />
-      </div>
-      <Title>Home</Title>
-      <Star>
-        <GiStarShuriken />
-      </Star>
+      <HeaderMenu>
+        <div>
+          <UserImg src="/images/blue-bird.png" alt="青い鳥" />
+        </div>
+        <Title>Home</Title>
+        <Star>
+          <GiStarShuriken />
+        </Star>
+      </HeaderMenu>
     </Header>
   );
 };

@@ -12,7 +12,17 @@ const Footer = styled.footer`
 
 const useStyles = makeStyles({
   root: {
-    backgroundColor: '#282c34',
+    backgroundColor: '#15202B',
+    border: 'solid 1px',
+    borderColor: 'rgb(61, 84, 102)',
+    width: '100%',
+    position: 'fixed',
+    left: '0px',
+    bottom: '2px',
+    zIndex: 99,
+    textAlign: 'center',
+    padding: '0 auto',
+    display: 'block',
   },
   default: {
     color: 'white',
