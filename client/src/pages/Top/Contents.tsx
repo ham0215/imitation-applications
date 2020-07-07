@@ -4,7 +4,7 @@ import Content from './Content';
 
 const Contents = styled.section`
   color: white;
-  margin-top: 70px;
+  margin-top: 60px;
   margin-bottom: 56px;
 `;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { GiStarShuriken } from 'react-icons/gi';
-import UserImg from 'components/UserImg';
+import Avatar from '@material-ui/core/Avatar';
 
 const Header = styled.header`
   display: block;
@@ -49,7 +49,7 @@ export default () => {
     <Header>
       <HeaderMenu>
         <ImgDiv>
-          <UserImg src="/images/blue-bird.png" alt="青い鳥" />
+          <Avatar src="/images/blue-bird.png" alt="青い鳥" />
         </ImgDiv>
         <Title>Home</Title>
         <Star>
