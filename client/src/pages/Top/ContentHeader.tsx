@@ -7,18 +7,25 @@ const GrayTypography = styled(Typography)`
   color: gray;
 `;
 
+const Header = styled.header`
+  width: 100%;
+  margin-top: 10px;
+`;
+
 export default () => {
   return (
-    <Grid item container>
-      <Grid item xs={4} zeroMinWidth>
-        <Typography noWrap>hogehogehogehoge</Typography>
+    <Header>
+      <Grid item container>
+        <Grid item xs={4} zeroMinWidth>
+          <Typography noWrap>hogehogehogehoge</Typography>
+        </Grid>
+        <Grid item xs={4} zeroMinWidth>
+          <GrayTypography noWrap>@hogehoge</GrayTypography>
+        </Grid>
+        <Grid item xs={4}>
+          <GrayTypography>1時間前</GrayTypography>
+        </Grid>
       </Grid>
-      <Grid item xs={4} zeroMinWidth>
-        <GrayTypography noWrap>@hogehoge</GrayTypography>
-      </Grid>
-      <Grid item xs={4}>
-        <GrayTypography>1時間前</GrayTypography>
-      </Grid>
-    </Grid>
+    </Header>
   );
 };

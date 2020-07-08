@@ -12,6 +12,10 @@ const Content = styled.div`
   padding: 0 10px 0 10px;
 `;
 
+const ContentImg = styled.img`
+  border-radius: 20px;
+`;
+
 export default () => {
   return (
     <Content>
@@ -28,7 +32,7 @@ export default () => {
             <br />
           </Grid>
           <Grid item container>
-            <img
+            <ContentImg
               src="https://www.hamchance.com/images/yarigadake.jpg"
               alt="槍ヶ岳"
               width="100%"
