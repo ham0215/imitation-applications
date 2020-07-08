@@ -1,11 +1,26 @@
 import React from 'react';
+import Header from './Header';
+import Contents from './Contents';
+import Footer from './Footer';
+import styled from 'styled-components/macro';
+
+const Container = styled.div`
+  background-color: #15202b;
+`;
+
+const Main = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+`;
 
 export default () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="/images/blue-bird.png" className="App-logo" alt="青い鳥" />
-      </header>
-    </div>
+    <Container>
+      <Main>
+        <Header />
+        <Contents />
+        <Footer />
+      </Main>
+    </Container>
   );
 };
