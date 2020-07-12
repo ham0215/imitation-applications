@@ -16,27 +16,34 @@ const ContentImg = styled.img`
   border-radius: 20px;
 `;
 
-export default () => {
+type Tweet = {
+  avatarImg: string;
+  avatarAlt: string;
+  text: string;
+  img: string;
+  imgAlt: string;
+};
+
+const Discription = styled(Grid)`
+  white-space: pre-wrap;
+`;
+
+export default (props: Tweet) => {
+  const { avatarImg, avatarAlt, text, img, imgAlt } = props;
+
   return (
     <Content>
       <Grid container wrap="nowrap" spacing={2}>
         <Grid item>
-          <Avatar src="/images/blue-bird.png" alt="青い鳥" />
+          <Avatar src={avatarImg} alt={avatarAlt} />
         </Grid>
         <Grid item container>
           <ContentHeader />
+          <Discription item container>
+            {text}
+          </Discription>
           <Grid item container>
-            槍が岳に行ってきました
-            <br />
-            最高だぜ！！！
-            <br />
-          </Grid>
-          <Grid item container>
-            <ContentImg
-              src="https://www.hamchance.com/images/yarigadake.jpg"
-              alt="槍ヶ岳"
-              width="100%"
-            />
+            <ContentImg src={img} alt={imgAlt} width="100%" />
           </Grid>
           <ContentFooter />
         </Grid>
