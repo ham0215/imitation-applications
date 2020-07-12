@@ -1,5 +1,8 @@
 [
   {
+    "name": "ham",
+    "id": "@hamchance0215",
+    "tweetTime": "1時間前",
     "avatarImg": "/images/blue-bird.png",
     "avatarAlt": "青い鳥",
     "text": "槍が岳に行ってきました\n最高だぜ！！！\n",
@@ -7,6 +10,9 @@
     "imgAlt": "槍ヶ岳"
   },
   {
+    "name": "ham",
+    "id": "@hamchance0215",
+    "tweetTime": "2時間前",
     "avatarImg": "/images/blue-bird.png",
     "avatarAlt": "青い鳥",
     "text": "尾瀬に行ってきました\n良いお散歩！！！\n",
@@ -14,6 +20,9 @@
     "imgAlt": "尾瀬"
   },
   {
+    "name": "ham",
+    "id": "@hamchance0215",
+    "tweetTime": "3時間前",
     "avatarImg": "/images/blue-bird.png",
     "avatarAlt": "青い鳥",
     "text": "燕岳に行ってきました\n日の出きれい！！！\n",
@@ -21,6 +30,9 @@
     "imgAlt": "燕岳"
   },
   {
+    "name": "ham",
+    "id": "@hamchance0215",
+    "tweetTime": "7月10日",
     "avatarImg": "/images/blue-bird.png",
     "avatarAlt": "青い鳥",
     "text": "谷川岳に行ってきました\n登りがいがある良い山でした！！！\n",
@@ -28,6 +40,9 @@
     "imgAlt": "谷川岳"
   },
   {
+    "name": "ham",
+    "id": "@hamchance0215",
+    "tweetTime": "2月15日",
     "avatarImg": "/images/blue-bird.png",
     "avatarAlt": "青い鳥",
     "text": "富士山に行ってきました\n最高だぜ！！！\n",
@@ -35,6 +50,9 @@
     "imgAlt": "富士山"
   },
   {
+    "name": "ham",
+    "id": "@hamchance0215",
+    "tweetTime": "50分",
     "avatarImg": "/images/blue-bird.png",
     "avatarAlt": "青い鳥",
     "text": "北岳に行ってきました\n日本で2番めに高い山です！！！\n",
@@ -42,6 +60,9 @@
     "imgAlt": "北岳"
   },
   {
+    "name": "ham",
+    "id": "@hamchance0215",
+    "tweetTime": "1分",
     "avatarImg": "/images/blue-bird.png",
     "avatarAlt": "青い鳥",
     "text": "赤岳に行ってきました\n赤岳は八ヶ岳の一つです！！！\n",

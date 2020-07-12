@@ -12,18 +12,26 @@ const Header = styled.header`
   margin-top: 10px;
 `;
 
-export default () => {
+type TweetUser = {
+  name: string;
+  id: string;
+  tweetTime: string;
+};
+
+export default (props: TweetUser) => {
+  const { name, id, tweetTime } = props;
+
   return (
     <Header>
       <Grid item container>
         <Grid item xs={4} zeroMinWidth>
-          <Typography noWrap>hogehogehogehoge</Typography>
+          <Typography noWrap>{name}</Typography>
         </Grid>
         <Grid item xs={4} zeroMinWidth>
-          <GrayTypography noWrap>@hogehoge</GrayTypography>
+          <GrayTypography noWrap>{id}</GrayTypography>
         </Grid>
         <Grid item xs={4}>
-          <GrayTypography>1時間前</GrayTypography>
+          <GrayTypography>{tweetTime}</GrayTypography>
         </Grid>
       </Grid>
     </Header>

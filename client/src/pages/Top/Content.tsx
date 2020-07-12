@@ -17,6 +17,9 @@ const ContentImg = styled.img`
 `;
 
 type Tweet = {
+  name: string;
+  id: string;
+  tweetTime: string;
   avatarImg: string;
   avatarAlt: string;
   text: string;
@@ -29,7 +32,16 @@ const Discription = styled(Grid)`
 `;
 
 export default (props: Tweet) => {
-  const { avatarImg, avatarAlt, text, img, imgAlt } = props;
+  const {
+    name,
+    id,
+    tweetTime,
+    avatarImg,
+    avatarAlt,
+    text,
+    img,
+    imgAlt,
+  } = props;
 
   return (
     <Content>
@@ -38,7 +50,7 @@ export default (props: Tweet) => {
           <Avatar src={avatarImg} alt={avatarAlt} />
         </Grid>
         <Grid item container>
-          <ContentHeader />
+          <ContentHeader name={name} id={id} tweetTime={tweetTime} />
           <Discription item container>
             {text}
           </Discription>
