@@ -1,5 +1,5 @@
 {
-  "extends": ["airbnb", "react-app"],
+  "extends": ["react-app", "airbnb"],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
   "settings": {
@@ -11,16 +11,8 @@
     }
   },
   "rules": {
-    "react/jsx-filename-extension": "off",
     "import/extensions": "off",
-    "consistent-return": "off",
-    "react/jsx-props-no-spreading": "off",
-    "react/jsx-one-expression-per-line": "off",
-    "react/prop-types": 0,
-    "no-underscore-dangle": 0,
-    "import/imports-first": ["error", "absolute-first"],
-    "import/newline-after-import": "error",
-    "@typescript-eslint/indent": ["error", 2],
+    "jsx-a11y/href-no-hash": "off",
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
@@ -28,29 +20,28 @@
         "specialLink": ["to"]
       }
     ],
-    "react/no-unused-prop-types": "off",
-    "object-curly-newline": "off",
-    "no-unused-expressions": [
-      "error",
-      {
-        "allowTaggedTemplates": true
-      }
-    ],
-    "camelcase": "off",
-    "spaced-comment": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
     "no-param-reassign": [
       "error",
       { "props": true, "ignorePropertyModificationsFor": ["state"] }
-    ]
-  },
-  "globals": {
-    "window": true,
-    "document": true,
-    "localStorage": true,
-    "FormData": true,
-    "FileReader": true,
-    "Blob": true,
-    "navigator": true
+    ],
+    "react/state-in-constructor": [2, "never"],
+    "no-unused-vars": 1,
+    "react/no-unused-prop-types": "off",
+    "object-curly-newline": "off",
+    "react/jsx-filename-extension": "off",
+    "jsx-a11y/label-has-for": [
+      2,
+      { "required": { "some": ["nesting", "id"] } }
+    ],
+    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
+    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "consistent-return": "off",
+    "no-use-before-define": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "object-property-newline": "off",
+    "react/jsx-props-no-spreading": "off",
+    "comma-dangle": "off"
   }
 }

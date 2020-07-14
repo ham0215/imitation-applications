@@ -3,12 +3,10 @@ import { Route, Switch } from 'react-router-dom';
 
 const Top = lazy(() => import(/* webpackChunkName: 'top' */ './Top'));
 
-export default () => {
-  return (
-    <Suspense fallback={null}>
-      <Switch>
-        <Route component={Top} />
-      </Switch>
-    </Suspense>
-  );
-};
+export default () => (
+  <Suspense fallback={null}>
+    <Switch>
+      <Route component={Top} />
+    </Switch>
+  </Suspense>
+);
