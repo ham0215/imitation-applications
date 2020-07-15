@@ -3,7 +3,9 @@ import { Router, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-const Top = lazy(() => import(/* webpackChunkName: 'top' */ './Top'));
+const Twitter = lazy(() =>
+  import(/* webpackChunkName: 'twitter' */ './Twitter'),
+);
 
 const history = createBrowserHistory();
 
@@ -11,7 +13,7 @@ export default () => (
   <Router history={history}>
     <Suspense fallback={<CircularProgress />}>
       <Switch>
-        <Route component={Top} />
+        <Route component={Twitter} />
       </Switch>
     </Suspense>
   </Router>
