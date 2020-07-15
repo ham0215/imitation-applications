@@ -1,11 +1,14 @@
 import React from 'react';
 import RootRouter from 'pages';
-import { BrowserRouter } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import theme from './styles/theme';
+import GlobalStyle from 'styles/global';
 
 export default () => {
   return (
-    <BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <RootRouter />
-    </BrowserRouter>
+    </ThemeProvider>
   );
 };
