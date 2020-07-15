@@ -15,6 +15,7 @@ const Main = styled.div`
 `;
 
 const Home = lazy(() => import(/* webpackChunkName: 'home' */ './Home'));
+const Detail = lazy(() => import(/* webpackChunkName: 'detail' */ './Detail'));
 
 export default () => {
   return (
@@ -22,6 +23,7 @@ export default () => {
       <Main>
         <Header />
         <Switch>
+          <Route path="/:userId/detail/:tweetId" exact component={Detail} />
           <Route component={Home} />
         </Switch>
         <Footer />
