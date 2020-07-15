@@ -11,6 +11,7 @@ const Container = styled.div`
 const Main = styled.div`
   margin-left: auto;
   margin-right: auto;
+  max-width: 768px;
 `;
 
 export default () => {

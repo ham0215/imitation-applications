@@ -6,6 +6,8 @@ import ContentFooter from './ContentFooter';
 import ContentHeader from './ContentHeader';
 
 const Content = styled.div`
+  border-left: solid 1px;
+  border-right: solid 1px;
   border-bottom: solid 1px;
   border-color: rgb(61, 84, 102);
   flex-grow: 1;
