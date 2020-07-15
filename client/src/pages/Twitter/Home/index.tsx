@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import Content from './Content';
-import Tweets from './Data/tweets.json';
+import Tweets from 'pages/Twitter/Data/tweets.json';
 
 const Contents = styled.section`
   color: white;
@@ -13,16 +13,7 @@ export default () => {
   console.log(Tweets);
 
   const contents = Tweets.map((tweet) => {
-    const {
-      name,
-      id,
-      tweetTime,
-      avatarImg,
-      avatarAlt,
-      text,
-      img,
-      imgAlt,
-    } = tweet;
+    const { name, id, tweetTime, avatarImg, avatarAlt, text, img, imgAlt } = tweet;
 
     return (
       <Content

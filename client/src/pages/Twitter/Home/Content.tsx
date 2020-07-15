@@ -34,16 +34,7 @@ const Discription = styled(Grid)`
 `;
 
 export default (props: Tweet) => {
-  const {
-    name,
-    id,
-    tweetTime,
-    avatarImg,
-    avatarAlt,
-    text,
-    img,
-    imgAlt,
-  } = props;
+  const { name, id, tweetTime, avatarImg, avatarAlt, text, img, imgAlt } = props;
 
   return (
     <Content>

@@ -3,9 +3,7 @@ import { Router, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-const Twitter = lazy(() =>
-  import(/* webpackChunkName: 'twitter' */ './Twitter'),
-);
+const Twitter = lazy(() => import(/* webpackChunkName: 'twitter' */ './Twitter'));
 
 const history = createBrowserHistory();
 

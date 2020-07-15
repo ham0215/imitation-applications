@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { lazy } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Header from './Header';
-import Contents from './Contents';
 import Footer from './Footer';
 import styled from 'styled-components/macro';
 
@@ -14,12 +14,16 @@ const Main = styled.div`
   max-width: 768px;
 `;
 
+const Home = lazy(() => import(/* webpackChunkName: 'home' */ './Home'));
+
 export default () => {
   return (
     <Container>
       <Main>
         <Header />
-        <Contents />
+        <Switch>
+          <Route component={Home} />
+        </Switch>
         <Footer />
       </Main>
     </Container>
