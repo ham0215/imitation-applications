@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
+import Link from 'components/BlockLink';
 import ContentFooter from './ContentFooter';
 import ContentHeader from './ContentHeader';
 
@@ -43,14 +44,16 @@ export default (props: Tweet) => {
           <Avatar src={avatarImg} alt={avatarAlt} />
         </Grid>
         <Grid item container>
-          <ContentHeader name={name} id={id} tweetTime={tweetTime} />
-          <Discription item container>
-            {text}
-          </Discription>
-          <Grid item container>
-            <ContentImg src={img} alt={imgAlt} width="100%" />
-          </Grid>
-          <ContentFooter />
+          <Link to={`/${id.slice(1)}/detail/hoge`}>
+            <ContentHeader name={name} id={id} tweetTime={tweetTime} />
+            <Discription item container>
+              {text}
+            </Discription>
+            <Grid item container>
+              <ContentImg src={img} alt={imgAlt} width="100%" />
+            </Grid>
+            <ContentFooter />
+          </Link>
         </Grid>
       </Grid>
     </Content>
