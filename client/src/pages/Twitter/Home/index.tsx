@@ -1,18 +1,10 @@
 import React from 'react';
-import styled from 'styled-components/macro';
-import Content from './Content';
+import Contents from 'components/Contents';
 import Tweets from 'pages/Twitter/Data/tweets.json';
+import Content from './Content';
 import Header from './Header';
 
-const Contents = styled.section`
-  color: white;
-  margin-top: 60px;
-  margin-bottom: 56px;
-`;
-
 export default () => {
-  console.log(Tweets);
-
   const contents = Tweets.map(({ name, userId, tweetId, tweetTime, avatarImg, avatarAlt, text, img, imgAlt }) => {
     return (
       <Content
