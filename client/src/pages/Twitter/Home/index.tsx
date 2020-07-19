@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import Content from './Content';
 import Tweets from 'pages/Twitter/Data/tweets.json';
+import Header from './Header';
 
 const Contents = styled.section`
   color: white;
@@ -12,13 +13,12 @@ const Contents = styled.section`
 export default () => {
   console.log(Tweets);
 
-  const contents = Tweets.map((tweet) => {
-    const { name, id, tweetTime, avatarImg, avatarAlt, text, img, imgAlt } = tweet;
-
+  const contents = Tweets.map(({ name, userId, tweetId, tweetTime, avatarImg, avatarAlt, text, img, imgAlt }) => {
     return (
       <Content
         name={name}
-        id={id}
+        userId={userId}
+        tweetId={tweetId}
         tweetTime={tweetTime}
         avatarAlt={avatarAlt}
         avatarImg={avatarImg}
@@ -29,5 +29,10 @@ export default () => {
     );
   });
 
-  return <Contents>{contents}</Contents>;
+  return (
+    <div>
+      <Header />
+      <Contents>{contents}</Contents>
+    </div>
+  );
 };

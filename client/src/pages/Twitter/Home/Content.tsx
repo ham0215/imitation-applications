@@ -21,7 +21,8 @@ const ContentImg = styled.img`
 
 type Tweet = {
   name: string;
-  id: string;
+  userId: string;
+  tweetId: number;
   tweetTime: string;
   avatarImg: string;
   avatarAlt: string;
@@ -34,9 +35,7 @@ const Discription = styled(Grid)`
   white-space: pre-wrap;
 `;
 
-export default (props: Tweet) => {
-  const { name, id, tweetTime, avatarImg, avatarAlt, text, img, imgAlt } = props;
-
+export default ({ name, userId, tweetId, tweetTime, avatarImg, avatarAlt, text, img, imgAlt }: Tweet) => {
   return (
     <Content>
       <Grid container wrap="nowrap" spacing={2}>
@@ -44,8 +43,8 @@ export default (props: Tweet) => {
           <Avatar src={avatarImg} alt={avatarAlt} />
         </Grid>
         <Grid item container>
-          <Link to={`/${id.slice(1)}/detail/hoge`}>
-            <ContentHeader name={name} id={id} tweetTime={tweetTime} />
+          <Link to={`/${userId.slice(1)}/detail/${tweetId}`}>
+            <ContentHeader name={name} id={userId} tweetTime={tweetTime} />
             <Discription item container>
               {text}
             </Discription>

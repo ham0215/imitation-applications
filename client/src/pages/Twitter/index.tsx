@@ -1,6 +1,5 @@
 import React, { lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Header from './Header';
 import Footer from './Footer';
 import styled from 'styled-components/macro';
 
@@ -21,7 +20,6 @@ export default () => {
   return (
     <Container>
       <Main>
-        <Header />
         <Switch>
           <Route path="/:userId/detail/:tweetId" exact component={Detail} />
           <Route component={Home} />
