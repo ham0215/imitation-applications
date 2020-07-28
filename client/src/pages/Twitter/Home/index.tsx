@@ -8,6 +8,7 @@ export default () => {
   const contents = Tweets.map(({ name, userId, tweetId, tweetTime, avatarImg, avatarAlt, text, img, imgAlt }) => {
     return (
       <Content
+        key={tweetId}
         name={name}
         userId={userId}
         tweetId={tweetId}
