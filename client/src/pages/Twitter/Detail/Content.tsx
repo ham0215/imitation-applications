@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
-import Link from 'components/BlockLink';
 import ContentFooter from './ContentFooter';
 import ContentHeader from './ContentHeader';
 
@@ -43,16 +42,14 @@ export default ({ name, userId, tweetId, tweetTime, avatarImg, avatarAlt, text, 
           <Avatar src={avatarImg} alt={avatarAlt} />
         </Grid>
         <Grid item container>
-          <Link to={`/${userId.slice(1)}/detail/${tweetId}`}>
-            <ContentHeader name={name} id={userId} tweetTime={tweetTime} />
-            <Discription item container>
-              {text}
-            </Discription>
-            <Grid item container>
-              <ContentImg src={img} alt={imgAlt} width="100%" />
-            </Grid>
-            <ContentFooter />
-          </Link>
+          <ContentHeader name={name} id={userId} tweetTime={tweetTime} />
+          <Discription item container>
+            {text}
+          </Discription>
+          <Grid item container>
+            <ContentImg src={img} alt={imgAlt} width="100%" />
+          </Grid>
+          <ContentFooter />
         </Grid>
       </Grid>
     </Content>
