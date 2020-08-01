@@ -1,7 +1,8 @@
 [
   {
     "name": "ham",
-    "id": "@hamchance0215",
+    "userId": "@hamchance0215",
+    "tweetId": 1,
     "tweetTime": "1時間前",
     "avatarImg": "/images/blue-bird.png",
     "avatarAlt": "青い鳥",
@@ -11,7 +12,8 @@
   },
   {
     "name": "ham",
-    "id": "@hamchance0215",
+    "userId": "@hamchance0215",
+    "tweetId": 2,
     "tweetTime": "2時間前",
     "avatarImg": "/images/blue-bird.png",
     "avatarAlt": "青い鳥",
@@ -21,7 +23,8 @@
   },
   {
     "name": "ham",
-    "id": "@hamchance0215",
+    "userId": "@hamchance0215",
+    "tweetId": 3,
     "tweetTime": "3時間前",
     "avatarImg": "/images/blue-bird.png",
     "avatarAlt": "青い鳥",
@@ -31,7 +34,8 @@
   },
   {
     "name": "ham",
-    "id": "@hamchance0215",
+    "userId": "@hamchance0215",
+    "tweetId": 4,
     "tweetTime": "7月10日",
     "avatarImg": "/images/blue-bird.png",
     "avatarAlt": "青い鳥",
@@ -41,7 +45,8 @@
   },
   {
     "name": "ham",
-    "id": "@hamchance0215",
+    "userId": "@hamchance0215",
+    "tweetId": 5,
     "tweetTime": "50分",
     "avatarImg": "/images/blue-bird.png",
     "avatarAlt": "青い鳥",
@@ -51,7 +56,8 @@
   },
   {
     "name": "ham",
-    "id": "@hamchance0215",
+    "userId": "@hamchance0215",
+    "tweetId": 6,
     "tweetTime": "1分",
     "avatarImg": "/images/blue-bird.png",
     "avatarAlt": "青い鳥",

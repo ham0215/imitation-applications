@@ -44,11 +44,7 @@ export default () => {
 
   return (
     <Footer>
-      <BottomNavigation
-        value={value}
-        onChange={handleChange}
-        className={classes.root}
-      >
+      <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
         <BottomNavigationAction
           value="home"
           icon={<AiTwotoneHome />}

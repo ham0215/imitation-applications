@@ -42,6 +42,7 @@ const Star = styled.div`
   margin-right: 10px;
   color: #1da1f2;
   font-size: 30px;
+  height: 60px;
 `;
 
 export default () => {
@@ -51,7 +52,7 @@ export default () => {
         <ImgDiv>
           <Avatar src="/images/blue-bird.png" alt="青い鳥" />
         </ImgDiv>
-        <Title>Home</Title>
+        <Title>ホーム</Title>
         <Star>
           <GiStarShuriken />
         </Star>
