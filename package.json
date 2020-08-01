@@ -2,12 +2,8 @@
   "name": "imitation-applications",
   "version": "0.1.0",
   "description": "Try to imitate a web application for self-learning.",
-  "homepage": "https://github.com/ham0215/imitation-applications#readme",
   "author": "ham",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ham0215/imitation-applications/issues"
-  },
   "private": true,
   "dependencies": {
     "@apollo/react-hooks": "^3.1.5",
