@@ -13,6 +13,10 @@ yarn build
 firebase deploy
 ```
 
+## Backend
+
+https://github.com/ham0215/imitation-applications-backend
+
 ## Available Scripts
 
 In the project directory, you can run:
