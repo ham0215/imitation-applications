@@ -1,6 +1,10 @@
-# Client
+# Imitation applications
 
-Apollo Client
+Try to imitate a web application for self-learning.
+
+* React
+* Apollo Client
+* Firebase Hosting
 
 ## Deploy
 
