@@ -51,8 +51,8 @@ export default ({ name, userId, tweetId, tweetTime, avatarImg, avatarAlt, text, 
             <Grid item container>
               <ContentImg src={img} alt={imgAlt} width="100%" />
             </Grid>
-            <ContentFooter />
           </Link>
+          <ContentFooter />
         </Grid>
       </Grid>
     </Content>
