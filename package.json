@@ -25,7 +25,7 @@
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "yarn lint:es && yarn lint:tsc && yarn lint:style && yarn lint:prettier",
+    "lint": "yarn lint:es && yarn lint:tsc && yarn lint:style",
     "lint:es": "yarn eslint src/**/*.{ts,tsx}",
     "lint:style": "stylelint './src/**/*.tsx'",
     "lint:prettier": "prettier --check './src/**/*.{ts,tsx}'",
