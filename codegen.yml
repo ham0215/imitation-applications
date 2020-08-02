@@ -3,6 +3,10 @@ schema: src/graphql/schema.graphql
 documents: src/**/*.graphql
 generates:
   src/generated/graphql.tsx:
+    config:
+      withHooks: true
+      withComponent: false
+      withHOC: false
     plugins:
       - "typescript"
       - "typescript-operations"

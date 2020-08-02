@@ -1,0 +1,13 @@
+{
+  tweets {
+    nodes {
+      tweetId
+      text
+      img
+      imgAlt
+      avatarAlt
+      avatarImg
+      tweetTime
+    }
+  }
+}
