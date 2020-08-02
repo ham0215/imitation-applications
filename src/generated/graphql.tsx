@@ -35,7 +35,6 @@ export type Query = {
   tweets: TweetConnection;
 };
 
-
 export type QueryTweetsArgs = {
   after?: Maybe<Scalars['String']>;
   before?: Maybe<Scalars['String']>;
@@ -76,17 +75,19 @@ export type TweetEdge = {
   node?: Maybe<Tweet>;
 };
 
-export type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
+export type Unnamed_1_QueryVariables = Exact<{ [key: string]: never }>;
 
-
-export type Unnamed_1_Query = (
-  { __typename?: 'Query' }
-  & { tweets: (
-    { __typename?: 'TweetConnection' }
-    & { nodes?: Maybe<Array<Maybe<(
-      { __typename?: 'Tweet' }
-      & Pick<Tweet, 'tweetId' | 'text' | 'img' | 'imgAlt' | 'avatarAlt' | 'avatarImg' | 'tweetTime'>
-    )>>> }
-  ) }
-);
-
+export type Unnamed_1_Query = { __typename?: 'Query' } & {
+  tweets: { __typename?: 'TweetConnection' } & {
+    nodes?: Maybe<
+      Array<
+        Maybe<
+          { __typename?: 'Tweet' } & Pick<
+            Tweet,
+            'tweetId' | 'text' | 'img' | 'imgAlt' | 'avatarAlt' | 'avatarImg' | 'tweetTime'
+          >
+        >
+      >
+    >;
+  };
+};

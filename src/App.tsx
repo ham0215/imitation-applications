@@ -1,14 +1,20 @@
 import React from 'react';
 import RootRouter from 'pages';
 import { ThemeProvider } from 'styled-components';
-import theme from './styles/theme';
 import GlobalStyle from 'styles/global';
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import theme from './styles/theme';
 
-export default () => {
-  return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
+const client = new ApolloClient({
+  uri: 'https://imitation-applications-cq5u3jmb7q-an.a.run.app/graphql',
+  cache: new InMemoryCache(),
+});
+
+export default () => (
+  <ThemeProvider theme={theme}>
+    <GlobalStyle />
+    <ApolloProvider client={client}>
       <RootRouter />
-    </ThemeProvider>
-  );
-};
+    </ApolloProvider>
+  </ThemeProvider>
+);
