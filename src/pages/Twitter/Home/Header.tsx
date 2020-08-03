@@ -45,18 +45,16 @@ const Star = styled.div`
   height: 60px;
 `;
 
-export default () => {
-  return (
-    <Header>
-      <HeaderMenu>
-        <ImgDiv>
-          <Avatar src="/images/blue-bird.png" alt="青い鳥" />
-        </ImgDiv>
-        <Title>ホーム</Title>
-        <Star>
-          <GiStarShuriken />
-        </Star>
-      </HeaderMenu>
-    </Header>
-  );
-};
+export default () => (
+  <Header>
+    <HeaderMenu>
+      <ImgDiv>
+        <Avatar src="/images/blue-bird.png" alt="青い鳥" />
+      </ImgDiv>
+      <Title>ホーム</Title>
+      <Star>
+        <GiStarShuriken />
+      </Star>
+    </HeaderMenu>
+  </Header>
+);
