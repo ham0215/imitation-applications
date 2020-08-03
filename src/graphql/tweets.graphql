@@ -5,6 +5,8 @@ query Tweets {
       text
       img
       imgAlt
+      userId
+      name
       avatarAlt
       avatarImg
       tweetTime

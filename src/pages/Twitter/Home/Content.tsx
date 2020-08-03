@@ -22,7 +22,7 @@ const ContentImg = styled.img`
 type Tweet = {
   name: string;
   userId: string;
-  tweetId: number;
+  tweetId: string;
   tweetTime: string;
   avatarImg: string;
   avatarAlt: string;

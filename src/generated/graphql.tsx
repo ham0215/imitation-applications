@@ -86,7 +86,7 @@ export type TweetsQuery = { __typename?: 'Query' } & {
         Maybe<
           { __typename?: 'Tweet' } & Pick<
             Tweet,
-            'tweetId' | 'text' | 'img' | 'imgAlt' | 'avatarAlt' | 'avatarImg' | 'tweetTime'
+            'tweetId' | 'text' | 'img' | 'imgAlt' | 'userId' | 'name' | 'avatarAlt' | 'avatarImg' | 'tweetTime'
           >
         >
       >
@@ -102,6 +102,8 @@ export const TweetsDocument = gql`
         text
         img
         imgAlt
+        userId
+        name
         avatarAlt
         avatarImg
         tweetTime
