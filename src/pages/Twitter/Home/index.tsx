@@ -1,6 +1,7 @@
 import React from 'react';
 import Contents from 'components/Contents';
 import Tweets from 'pages/Twitter/Data/tweets.json';
+import { useTweetsQuery } from 'generated/graphql';
 import Content from './Content';
 import Header from './Header';
 
@@ -19,6 +20,10 @@ export default () => {
       imgAlt={imgAlt}
     />
   ));
+
+  const { data, loading, error } = useTweetsQuery({
+    variables: {},
+  });
 
   return (
     <div>
