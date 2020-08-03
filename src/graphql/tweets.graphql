@@ -1,0 +1,15 @@
+query Tweets {
+  tweets {
+    nodes {
+      tweetId
+      text
+      img
+      imgAlt
+      userId
+      name
+      avatarAlt
+      avatarImg
+      tweetTime
+    }
+  }
+}

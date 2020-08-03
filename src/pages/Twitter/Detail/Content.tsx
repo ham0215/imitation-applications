@@ -34,24 +34,22 @@ const Discription = styled(Grid)`
   white-space: pre-wrap;
 `;
 
-export default ({ name, userId, tweetId, tweetTime, avatarImg, avatarAlt, text, img, imgAlt }: Tweet) => {
-  return (
-    <Content>
-      <Grid container wrap="nowrap" spacing={2}>
-        <Grid item>
-          <Avatar src={avatarImg} alt={avatarAlt} />
-        </Grid>
-        <Grid item container>
-          <ContentHeader name={name} id={userId} tweetTime={tweetTime} />
-          <Discription item container>
-            {text}
-          </Discription>
-          <Grid item container>
-            <ContentImg src={img} alt={imgAlt} width="100%" />
-          </Grid>
-          <ContentFooter />
-        </Grid>
+export default ({ name, userId, tweetId, tweetTime, avatarImg, avatarAlt, text, img, imgAlt }: Tweet) => (
+  <Content key={tweetId}>
+    <Grid container wrap="nowrap" spacing={2}>
+      <Grid item>
+        <Avatar src={avatarImg} alt={avatarAlt} />
       </Grid>
-    </Content>
-  );
-};
+      <Grid item container>
+        <ContentHeader name={name} id={userId} tweetTime={tweetTime} />
+        <Discription item container>
+          {text}
+        </Discription>
+        <Grid item container>
+          <ContentImg src={img} alt={imgAlt} width="100%" />
+        </Grid>
+        <ContentFooter />
+      </Grid>
+    </Grid>
+  </Content>
+);

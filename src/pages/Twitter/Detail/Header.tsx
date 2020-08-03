@@ -36,15 +36,13 @@ const Title = styled.h2`
   color: white;
 `;
 
-export default () => {
-  return (
-    <Header>
-      <HeaderMenu>
-        <BackLink to="/">
-          <AiOutlineArrowLeft />
-        </BackLink>
-        <Title>ツイートする</Title>
-      </HeaderMenu>
-    </Header>
-  );
-};
+export default () => (
+  <Header>
+    <HeaderMenu>
+      <BackLink to="/">
+        <AiOutlineArrowLeft />
+      </BackLink>
+      <Title>ツイートする</Title>
+    </HeaderMenu>
+  </Header>
+);
